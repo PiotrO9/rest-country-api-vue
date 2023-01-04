@@ -1,10 +1,16 @@
 <template>
-  
+  <div class="mainView">
+    <Searching />
+  </div>
 </template>
 
 <script>
-export default {
+import Searching from '../components/Searching.vue'
 
+export default {
+    components: {
+        Searching
+    }
 }
 </script>
 

@@ -1,1 +1,1 @@
-{"version":3,"sources":[],"names":[],"mappings":"","file":"MainViewStyles.css"}
+{"version":3,"sources":["variables.scss","MainViewStyles.scss","MainViewStyles.css"],"names":[],"mappings":"AAAQ,iGAAA;ACER;EACI,WAAA;EACA,oCDFY;AEEhB","file":"MainViewStyles.css"}

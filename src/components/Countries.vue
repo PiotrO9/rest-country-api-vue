@@ -1,16 +1,28 @@
 <template>
   <div class="countries">
-
+    <Country v-for="country in countries" :shortlink="country">
+    </Country>
   </div>
 </template>
 
 <script>
+import Country from '@/components/Country.vue'
 import GetAllCountries from '@/utils/GetAllCountries'
 
 export default {
-    setup() {
-        console.log(GetAllCountries().then((res) => console.log(res[0])))
+  components: {
+    Country
+  },
+  data() {
+    return {
+      countries: null
     }
+  },
+  mounted() {
+      GetAllCountries()
+        .then((res) => this.countries = res)
+        .then((res) => console.log(res[0]))
+  }
 }
 </script>
 

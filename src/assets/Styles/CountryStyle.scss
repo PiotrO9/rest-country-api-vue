@@ -1,0 +1,39 @@
+@import './variables.scss';
+
+.country {
+    max-width: 350px;
+    min-height: 300px;
+    background-color: white;
+    border-radius: 16px;
+
+    img, .country__info {
+        height: 50%;
+        width: 100%;
+    }
+    
+    .country__info {
+        display: flex;
+        flex-direction: column;
+        padding-left: 20px;
+        font-family: 'Nunito Sans';
+
+        .country__data {
+            font-weight: 600;
+            font-family: 'Nunito Sans';
+            margin-bottom: 5px;
+        }
+    }
+
+    .name {
+        font-size: 18px;
+        font-weight: 800;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-family: 'Nunito Sans';
+    }
+    
+    span {
+        font-weight: 300;
+        font-family: 'Nunito Sans';
+    }
+}

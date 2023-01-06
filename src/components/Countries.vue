@@ -21,7 +21,7 @@ export default {
   mounted() {
       GetAllCountries()
         .then((res) => this.countries = res)
-        .then((res) => console.log(res[0]))
+        .then((res) => console.log(res))
   }
 }
 </script>

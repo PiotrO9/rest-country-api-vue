@@ -1,7 +1,7 @@
 <template>
   <div class="mainView">
-    <Searching />
-    <Countries />
+    <Searching @regionSelected="changeRegion"/>
+    <Countries :region=region />
   </div>
 </template>
 
@@ -10,9 +10,20 @@ import Searching from '../components/Searching.vue'
 import Countries from '../components/Countries.vue'
 
 export default {
+    data() {
+      return {
+        region: "",
+        countryShortcut: ""
+      }
+    },
     components: {
         Searching,
         Countries
+    },
+    methods: {
+      changeRegion(param) {
+        this.region = param
+      }
     }
 }
 </script>

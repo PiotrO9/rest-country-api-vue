@@ -8,8 +8,10 @@
 <script>
 import Country from '@/components/Country.vue'
 import GetAllCountries from '@/utils/GetAllCountries'
+import FilterCountries from '@/utils/FilterCountries'
 
 export default {
+  props: ['region'],
   components: {
     Country
   },
@@ -18,10 +20,17 @@ export default {
       countries: null
     }
   },
+  watch: {
+    region(oldValue, newValue) {
+      // console.log(this.$props.region)
+      GetAllCountries()
+        .then((res) => this.countries = FilterCountries(res, this.$props.region))
+    }
+  },
   mounted() {
       GetAllCountries()
         .then((res) => this.countries = res)
-        .then((res) => console.log(res))
+        .then((res) => console.log(res[0]))
   }
 }
 </script>

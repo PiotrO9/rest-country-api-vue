@@ -1,13 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap");
 .country {
   max-width: 350px;
-  min-height: 300px;
+  min-height: 350px;
   background-color: white;
   border-radius: 16px;
 }
 .country img, .country .country__info {
   height: 50%;
   width: 100%;
+}
+.country img {
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
 }
 .country .country__info {
   display: flex;
@@ -26,6 +30,10 @@
   margin-top: 10px;
   margin-bottom: 10px;
   font-family: "Nunito Sans";
+  text-decoration: none;
+}
+.country .name:visited {
+  color: black;
 }
 .country span {
   font-weight: 300;

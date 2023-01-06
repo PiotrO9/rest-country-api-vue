@@ -2,7 +2,7 @@
 
 .country {
     max-width: 350px;
-    min-height: 300px;
+    min-height: 350px;
     background-color: white;
     border-radius: 16px;
 
@@ -11,6 +11,11 @@
         width: 100%;
     }
     
+    img {
+        border-top-left-radius: 16px;
+        border-top-right-radius: 16px;
+    }
+
     .country__info {
         display: flex;
         flex-direction: column;
@@ -30,6 +35,11 @@
         margin-top: 10px;
         margin-bottom: 10px;
         font-family: 'Nunito Sans';
+        text-decoration: none;
+
+        &:visited {
+            color: black;
+        }
     }
     
     span {

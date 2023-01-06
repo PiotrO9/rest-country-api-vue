@@ -8,10 +8,11 @@
 <script>
 import Country from '@/components/Country.vue'
 import GetAllCountries from '@/utils/GetAllCountries'
-import FilterCountries from '@/utils/FilterCountries'
+import FilterCountriesByRegion from '@/utils/FilterCountriesByRegion'
+import FilterCountriesByShortcut from '@/utils/FilterCountriesByShortcut'
 
 export default {
-  props: ['region'],
+  props: ['region', 'countryShortcut'],
   components: {
     Country
   },
@@ -24,7 +25,11 @@ export default {
     region(oldValue, newValue) {
       // console.log(this.$props.region)
       GetAllCountries()
-        .then((res) => this.countries = FilterCountries(res, this.$props.region))
+        .then((res) => this.countries = FilterCountriesByRegion(res, this.$props.region))
+    },
+    countryShortcut(oldValue, newValue) {
+      GetAllCountries()
+        .then((res) => this.countries = FilterCountriesByShortcut(res, this.$props.countryShortcut))
     }
   },
   mounted() {

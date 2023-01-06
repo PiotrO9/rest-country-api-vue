@@ -1,7 +1,7 @@
 <template>
   <div class="mainView">
-    <Searching @regionSelected="changeRegion"/>
-    <Countries :region=region />
+    <Searching @regionSelected="changeRegion" @inputedCountryName="changeCountryName"/>
+    <Countries :region=region :countryShortcut=countryShortcut />
   </div>
 </template>
 
@@ -23,6 +23,9 @@ export default {
     methods: {
       changeRegion(param) {
         this.region = param
+      },
+      changeCountryName(param) {
+        this.countryShortcut = param
       }
     }
 }

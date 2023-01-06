@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap");
 .country {
   max-width: 350px;
-  min-height: 350px;
+  max-height: 350px;
   background-color: white;
   border-radius: 16px;
 }

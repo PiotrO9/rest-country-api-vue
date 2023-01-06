@@ -3,7 +3,8 @@
     <div class="saerching__content">
         <div class="inputContainer">
             <fa icon="magnifying-glass"/>
-            <input type="text" placeholder="Search for a country..." id="searchInput">
+            <input type="text" placeholder="Search for a country..." 
+            @input="inputCountryName" id="searchInput">
         </div>
         <select name="countries" id="Countries" @change="selectedRegion">
             <option value="">Filter by region</option>
@@ -22,9 +23,14 @@ export default {
   methods: {
     selectedRegion() {
       const selectRegion = document.getElementById("Countries").value
-      console.log(selectRegion)
 
       this.$emit("regionSelected", selectRegion)
+    },
+    inputCountryName() {
+      const inputValue = document.getElementById("searchInput").value
+      console.log(inputValue)
+
+      this.$emit("inputedCountryName", inputValue)
     }
   }
 }

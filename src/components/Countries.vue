@@ -7,7 +7,7 @@
 
 <script>
 import Country from '@/components/Country.vue'
-import GetAllCountries from '@/utils/GetAllCountries'
+import GetAllCountries from '@/utils/GetAllCountries.js'
 import FilterCountriesByRegion from '@/utils/FilterCountriesByRegion'
 import FilterCountriesByShortcut from '@/utils/FilterCountriesByShortcut'
 
@@ -35,7 +35,6 @@ export default {
   mounted() {
       GetAllCountries()
         .then((res) => this.countries = res)
-        .then((res) => console.log(res[0]))
   }
 }
 </script>

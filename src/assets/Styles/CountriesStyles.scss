@@ -7,17 +7,17 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 50px;
 
-    @media (max-width: 1300px) {
+    @media (max-width: $MediumWidthResolution) {
         grid-template-columns: 1fr 1fr 1fr;
     }
 
-    @media (max-width: 1000px) {
+    @media (max-width: $SmallWidthResolution) {
         grid-template-columns: 1fr 1fr ;
     }
 
-    @media (max-width: 700px) {
+    @media (max-width: $MobileWidthResolution) {
         display: flex;
-        flex-direction: column;
         align-items: center;
+        flex-direction: column;
     }
 }

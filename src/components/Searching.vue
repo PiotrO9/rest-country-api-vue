@@ -28,7 +28,6 @@ export default {
     },
     inputCountryName() {
       const inputValue = document.getElementById("searchInput").value
-      console.log(inputValue)
 
       this.$emit("inputedCountryName", inputValue)
     }

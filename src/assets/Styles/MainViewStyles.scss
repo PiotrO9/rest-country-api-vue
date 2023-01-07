@@ -2,9 +2,7 @@
 
 .mainView {
     height: 90%;
-    display: flex;
+    @include flex-center;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     background-color: $VeryLightGray;
 }

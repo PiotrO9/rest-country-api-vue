@@ -1,3 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap');
 
 $VeryLightGray: hsl(0, 0%, 98%);
+
+$MediumWidthResolution: 1300px;
+$SmallWidthResolution: 1000px;
+$MobileWidthResolution: 700px;
+
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

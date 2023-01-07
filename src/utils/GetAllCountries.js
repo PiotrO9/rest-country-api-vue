@@ -1,8 +1,8 @@
-import axios from 'axios'
+const axios = require('axios')
 
 function GetAllCountries() {
     return axios.get('https://restcountries.com/v3.1/all')
     .then(res => res.data)
 }
 
-export default GetAllCountries
+module.exports = GetAllCountries

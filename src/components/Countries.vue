@@ -23,7 +23,6 @@ export default {
   },
   watch: {
     region(oldValue, newValue) {
-      // console.log(this.$props.region)
       GetAllCountries()
         .then((res) => this.countries = FilterCountriesByRegion(res, this.$props.region))
     },

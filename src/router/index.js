@@ -11,7 +11,8 @@ const routes = [
   {
     path: '/countryDetails/:shortName',
     name: 'detail',
-    component: DetailView
+    component: DetailView,
+    props: true
   }
 ]
 

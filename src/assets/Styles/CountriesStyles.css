@@ -19,7 +19,7 @@
 @media (max-width: 700px) {
   .countries {
     display: flex;
-    flex-direction: column;
     align-items: center;
+    flex-direction: column;
   }
 }/*# sourceMappingURL=CountriesStyles.css.map */

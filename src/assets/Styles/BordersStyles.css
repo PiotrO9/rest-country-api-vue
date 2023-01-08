@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap");
+.borders {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.borders span {
+  font-family: "Nunito Sans";
+  font-size: 21px;
+  font-weight: bold;
+}
+.borders .borderCountries {
+  width: 50%;
+  height: 60%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.borders .borderCountries .border {
+  width: 80px;
+  height: 25px;
+  text-align: center;
+  border: 2px solid grey;
+  border-radius: 6px;
+  box-shadow: -3px -3px 3px -2px grey;
+}
+.borders .borderCountries .border a {
+  text-decoration: none;
+  font-family: "Nunito Sans";
+  font-weight: bold;
+}
+.borders .borderCountries .border a:visited {
+  color: black;
+}/*# sourceMappingURL=BordersStyles.css.map */

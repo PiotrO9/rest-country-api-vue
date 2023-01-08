@@ -1,1 +1,1 @@
-{"version":3,"sources":["variables.scss","DetailViewStyles.scss","DetailViewStyles.css"],"names":[],"mappings":"AAAQ,iGAAA;ACER;EACI,aAAA;EACA,sBAAA;EACA,WAAA;EACA,cAAA;ACAJ;ADEI;EACI,oBAAA;ACAR","file":"DetailViewStyles.css"}
+{"version":3,"sources":["variables.scss","DetailViewStyles.scss","DetailViewStyles.css"],"names":[],"mappings":"AAAQ,iGAAA;ACER;EACI,aAAA;EACA,sBAAA;EACA,WAAA;EACA,cAAA;ACAJ;ADEI;EACI,YAAA;EACA,oBAAA;EACA,YAAA;EACA,iBAAA;EACA,qBAAA;EACA,sBAAA;EAGA,mCAAA;EACA,0BAAA;EACA,iBAAA;ACAR;ADEQ;EACI,YAAA;ACAZ","file":"DetailViewStyles.css"}

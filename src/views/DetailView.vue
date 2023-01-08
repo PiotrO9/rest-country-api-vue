@@ -1,6 +1,6 @@
 <template>
   <div class="detailView">
-    <a href="/">Back</a>
+    <a href="/" class="leftArrow"><fa id="moon" icon="fa-arrow-left" />   Back</a>
     <CountryDetail :countryDetail=singleCountry />
   </div>
 </template>

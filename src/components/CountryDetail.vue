@@ -8,22 +8,27 @@
       <div class="datas">
         <DateLine propertyName="Native name" :value=countryDetail.name.common />
         <DateLine propertyName="Currency" :value=getCurrency() />
-        <DateLine propertyName="Native name" :value=countryDetail.name.common />
+        <DateLine propertyName="Population" :value=countryDetail.population />
+        <DateLine propertyName="Languages" :value=getLanguages() />
+        <DateLine propertyName="Region" :value=countryDetail.region />
+        <DateLine v-if="countryDetail.subregion != undefined" propertyName="Subregion" :value=countryDetail.subregion />
+        <DateLine propertyName="Capital" :value=countryDetail.capital[0] />
+        <DateLine propertyName="Timezone" :value=countryDetail.timezones[0] />
       </div>
-      <div class="borders">
-
-      </div>
+      <Borders :borders=countryDetail.borders />
     </div>
   </div>
 </template>
 
 <script>
 import DateLine from "@/components/DateLine.vue"
+import Borders from "@/components/Borders.vue"
 
 export default {
   props: ['countryDetail'],
   components: {
-    DateLine
+    DateLine,
+    Borders
   },
   data() {
     return {
@@ -34,6 +39,11 @@ export default {
     getCurrency() {
       let currencies = this.$props.countryDetail.currencies
       return Object.keys(currencies)[0]
+    },
+    getLanguages() {
+      let languages = Object.values(this.$props.countryDetail.languages)
+      languages = languages.join(", ")
+      return languages
     }
   }
 }

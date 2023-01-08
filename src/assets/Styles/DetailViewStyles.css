@@ -5,6 +5,17 @@
   height: 90%;
   padding: 100px;
 }
-.detailView a {
+.detailView .leftArrow {
+  width: 100px;
   margin-bottom: 100px;
+  padding: 5px;
+  padding-left: 8px;
+  text-decoration: none;
+  border: 2px solid grey;
+  box-shadow: -3px -3px 3px -2px grey;
+  font-family: "Nunito Sans";
+  font-weight: bold;
+}
+.detailView .leftArrow:visited {
+  color: black;
 }/*# sourceMappingURL=DetailViewStyles.css.map */

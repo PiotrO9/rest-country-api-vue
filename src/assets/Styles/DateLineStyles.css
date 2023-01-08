@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap");
+.dateLine {
+  width: 100%;
+  min-height: 30px;
+  max-height: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: start;
+  font-family: "Nunito Sans";
+}
+.dateLine b {
+  font-size: 16px;
+  font-weight: 600;
+}
+.dateLine span {
+  margin-left: 12px;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 600;
+}/*# sourceMappingURL=DateLineStyles.css.map */

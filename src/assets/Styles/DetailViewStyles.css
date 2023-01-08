@@ -1,6 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap");
 .detailView {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  height: 90%;
   padding: 100px;
+}
+.detailView a {
+  margin-bottom: 100px;
 }/*# sourceMappingURL=DetailViewStyles.css.map */

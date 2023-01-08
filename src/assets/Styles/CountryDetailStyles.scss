@@ -1,5 +1,30 @@
 @import './variables.scss';
 
-// .countryDetail {
+.countryDetail {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
 
-// }
+
+    .countryDetail__flag {
+        width: 45%;
+
+        img {
+            width: 100%;
+        }
+
+        
+    }
+
+    .countryDetail__datas {
+        width: 53%;
+
+        .datas {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+}

@@ -1,0 +1,24 @@
+@import './variables.scss';
+
+.dateLine {
+    width: 100%;
+    min-height: 30px;
+    max-height: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: start;
+    font-family: 'Nunito Sans';
+
+    b {
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    span {
+        margin-left: 12px;
+        text-align: center;
+        font-size: 13px;
+        font-weight: 600;
+    }
+}

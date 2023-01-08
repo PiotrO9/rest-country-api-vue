@@ -2,6 +2,11 @@
 
 .detailView {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    height: 90%;
     padding: 100px;
+
+    a {
+        margin-bottom: 100px;
+    }
 }

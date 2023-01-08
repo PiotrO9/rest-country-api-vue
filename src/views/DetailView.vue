@@ -1,17 +1,23 @@
 <template>
   <div class="detailView">
     <a href="/">Back</a>
+    <CountryDetail :countryDetail=singleCountry />
   </div>
 </template>
 
 <script>
+import CountryDetail from "@/components/CountryDetail.vue"
 import GetSingleCountry from "../utils/GetSingleCountry.js"
+
 export default {
     props: ['shortlink'],
     data() {
         return {
-            singleCountry: ""
+            singleCountry: "",
         }
+    },
+    components: {
+        CountryDetail
     },
     mounted() {
         let shortName = this.$route.params.shortName

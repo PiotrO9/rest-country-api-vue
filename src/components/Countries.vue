@@ -10,6 +10,7 @@ import Country from '@/components/Country.vue'
 import GetAllCountries from '@/utils/GetAllCountries.js'
 import FilterCountriesByRegion from '@/utils/FilterCountriesByRegion'
 import FilterCountriesByShortcut from '@/utils/FilterCountriesByShortcut'
+import FilterCountriesByBothFilters from '@/utils/FilterCountriesByBothFilters'
 
 export default {
   props: ['region', 'countryShortcut'],
@@ -23,12 +24,25 @@ export default {
   },
   watch: {
     region(oldValue, newValue) {
-      GetAllCountries()
+      if(this.$props.countryShortcut != "") {
+        GetAllCountries()
+          .then((res) => this.countries = FilterCountriesByBothFilters(res, this.$props.countryShortcut, this.$props.region))
+          return
+      }
+      else {
+        GetAllCountries()
         .then((res) => this.countries = FilterCountriesByRegion(res, this.$props.region))
+      }
     },
     countryShortcut(oldValue, newValue) {
-      GetAllCountries()
-        .then((res) => this.countries = FilterCountriesByShortcut(res, this.$props.countryShortcut))
+      if(this.$props.region != "") {
+        GetAllCountries()
+          .then((res) => this.countries = FilterCountriesByBothFilters(res, this.$props.countryShortcut, this.$props.region))
+      }
+      else {
+        GetAllCountries()
+          .then((res) => this.countries = FilterCountriesByShortcut(res, this.$props.countryShortcut))
+      }
     }
   },
   mounted() {

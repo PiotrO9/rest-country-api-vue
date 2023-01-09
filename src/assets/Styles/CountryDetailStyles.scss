@@ -1,11 +1,11 @@
 @import './variables.scss';
 
 .countryDetail {
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 100%;
-    height: 100%;
 
     @media (max-width: $DetailSamllWidthResolution) {
         flex-direction: column;

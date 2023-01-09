@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap");
 .detailView {
-  display: flex;
-  flex-direction: column;
   height: 90%;
   padding: 100px;
+  display: flex;
+  flex-direction: column;
 }
 @media (max-width: 900px) {
   .detailView {
@@ -17,9 +17,9 @@
   padding-left: 8px;
   text-decoration: none;
   border: 2px solid grey;
-  box-shadow: -3px -3px 3px -2px grey;
   font-family: "Nunito Sans";
   font-weight: bold;
+  box-shadow: -3px -3px 3px -2px grey;
 }
 @media (max-width: 900px) {
   .detailView .leftArrow {

@@ -4,8 +4,8 @@
   max-height: 50px;
   display: flex;
   flex-direction: row;
-  align-items: flex-end;
   justify-content: start;
+  align-items: flex-end;
   margin-left: 20px;
   font-family: "Nunito Sans";
 }

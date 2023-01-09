@@ -8,8 +8,8 @@
   align-items: center;
 }
 .borders span {
-  font-family: "Nunito Sans";
   font-size: 21px;
+  font-family: "Nunito Sans";
   font-weight: bold;
 }
 @media (max-width: 900px) {
@@ -34,9 +34,9 @@
 .borders .borderCountries .border {
   width: 80px;
   height: 25px;
-  text-align: center;
   border: 2px solid grey;
   border-radius: 6px;
+  text-align: center;
   box-shadow: -3px -3px 3px -2px grey;
 }
 @media (max-width: 900px) {

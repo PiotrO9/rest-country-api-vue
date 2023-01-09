@@ -9,8 +9,8 @@
     align-items: center;
 
     span {
-        font-family: 'Nunito Sans';
         font-size: 21px;
+        font-family: 'Nunito Sans';
         font-weight: bold;
 
         @media (max-width: $DetailSamllWidthResolution) {
@@ -34,9 +34,9 @@
         .border {
             width: 80px;
             height: 25px;
-            text-align: center;
             border: 2px solid grey;
             border-radius: 6px;
+            text-align: center;
             -webkit-box-shadow: -3px -3px 3px -2px grey;
             -moz-box-shadow: -3px -3px 3px -2px grey;
             box-shadow: -3px -3px 3px -2px grey;
@@ -59,7 +59,5 @@
                 }
             }
         }
-
-        
     }
 }

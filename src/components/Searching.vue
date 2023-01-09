@@ -23,12 +23,10 @@ export default {
   methods: {
     selectedRegion() {
       const selectRegion = document.getElementById("Countries").value
-
       this.$emit("regionSelected", selectRegion)
     },
     inputCountryName() {
       const inputValue = document.getElementById("searchInput").value
-
       this.$emit("inputedCountryName", inputValue)
     }
   }

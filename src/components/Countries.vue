@@ -1,7 +1,6 @@
 <template>
   <div class="countries">
-    <Country v-for="country in countries" :shortlink="country">
-    </Country>
+    <Country v-for="country in countries" :shortlink="country" />
   </div>
 </template>
 

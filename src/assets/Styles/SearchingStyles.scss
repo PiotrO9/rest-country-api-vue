@@ -64,11 +64,11 @@
             }
 
             &::-ms-expand {
+                outline: none;
+                text-align: center;
                 -webkit-appearance: none;
                 -moz-appearance: none;
                 appearance: none;
-                outline: none;
-                text-align: center;
             }
 
             @media (max-width: $MediumWidthResolution) {

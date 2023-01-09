@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap");
 .countries {
-  height: 85%;
   width: 80%;
+  height: 85%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 50px;

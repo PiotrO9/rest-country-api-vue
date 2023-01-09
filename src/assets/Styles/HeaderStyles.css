@@ -16,6 +16,11 @@ header .header__content {
 header .header__content h1 {
   font-family: "Nunito Sans";
 }
+@media (max-width: 700px) {
+  header .header__content h1 {
+    font-size: 20px;
+  }
+}
 header .header__content span {
   font-family: "Nunito Sans";
   font-size: 18px;

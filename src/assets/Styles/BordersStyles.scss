@@ -12,6 +12,10 @@
         font-family: 'Nunito Sans';
         font-size: 21px;
         font-weight: bold;
+
+        @media (max-width: $DetailSamllWidthResolution) {
+            font-size: 19px;
+        }
     }
 
     .borderCountries {
@@ -23,6 +27,10 @@
         justify-content: space-around;
         align-items: center;
 
+        @media (max-width: $DetailSamllWidthResolution) {
+            width: 70%;
+        }
+
         .border {
             width: 80px;
             height: 25px;
@@ -33,11 +41,19 @@
             -moz-box-shadow: -3px -3px 3px -2px grey;
             box-shadow: -3px -3px 3px -2px grey;
 
+            @media (max-width: $DetailSamllWidthResolution) {
+                width: 60px;
+            }
+
             a {
                 text-decoration: none;
                 font-family: 'Nunito Sans';
                 font-weight: bold;
     
+                @media (max-width: $DetailSamllWidthResolution) {
+                    font-size: 13px;
+                }    
+
                 &:visited {
                     color: black;
                 }

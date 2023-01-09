@@ -6,6 +6,10 @@
     background-color: white;
     border-radius: 16px;
 
+    @media (max-width: $MobileWidthResolution) {
+        min-width: 300px;
+    }
+
     img, .country__info {
         height: 50%;
         width: 100%;

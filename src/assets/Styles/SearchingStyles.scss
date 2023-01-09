@@ -20,6 +20,11 @@
             background-color: white;
             border-radius: 16px;
 
+            @media (max-width: $MobileWidthResolution) {
+                width: 50%;
+                font-size: 14px;
+            }
+
             svg {
                 margin-right: 10px;
             }
@@ -48,10 +53,32 @@
             font-family: 'Nunito Sans';
             font-weight: 600;
             font-size: 16px;
+            text-align: center;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
 
             &:focus {
                 outline: 0px;
                 border: none;
+            }
+
+            &::-ms-expand {
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                appearance: none;
+                outline: none;
+                text-align: center;
+            }
+
+            @media (max-width: $MediumWidthResolution) {
+                width: 20%;
+                font-size: 14px;
+            }
+
+            @media (max-width: $MobileWidthResolution) {
+                width: 25%;
+                font-size: 12px;
             }
 
             option {

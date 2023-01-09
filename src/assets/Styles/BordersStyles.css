@@ -12,6 +12,11 @@
   font-size: 21px;
   font-weight: bold;
 }
+@media (max-width: 900px) {
+  .borders span {
+    font-size: 19px;
+  }
+}
 .borders .borderCountries {
   width: 50%;
   height: 60%;
@@ -21,6 +26,11 @@
   justify-content: space-around;
   align-items: center;
 }
+@media (max-width: 900px) {
+  .borders .borderCountries {
+    width: 70%;
+  }
+}
 .borders .borderCountries .border {
   width: 80px;
   height: 25px;
@@ -29,10 +39,20 @@
   border-radius: 6px;
   box-shadow: -3px -3px 3px -2px grey;
 }
+@media (max-width: 900px) {
+  .borders .borderCountries .border {
+    width: 60px;
+  }
+}
 .borders .borderCountries .border a {
   text-decoration: none;
   font-family: "Nunito Sans";
   font-weight: bold;
+}
+@media (max-width: 900px) {
+  .borders .borderCountries .border a {
+    font-size: 13px;
+  }
 }
 .borders .borderCountries .border a:visited {
   color: black;

@@ -5,6 +5,11 @@
   height: 90%;
   padding: 100px;
 }
+@media (max-width: 900px) {
+  .detailView {
+    padding: 20px;
+  }
+}
 .detailView .leftArrow {
   width: 100px;
   margin-bottom: 100px;
@@ -15,6 +20,12 @@
   box-shadow: -3px -3px 3px -2px grey;
   font-family: "Nunito Sans";
   font-weight: bold;
+}
+@media (max-width: 900px) {
+  .detailView .leftArrow {
+    margin-bottom: 30px;
+    margin-left: 50px;
+  }
 }
 .detailView .leftArrow:visited {
   color: black;

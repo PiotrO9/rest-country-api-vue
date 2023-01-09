@@ -23,6 +23,12 @@
   background-color: white;
   border-radius: 16px;
 }
+@media (max-width: 700px) {
+  .searching .saerching__content .inputContainer {
+    width: 50%;
+    font-size: 14px;
+  }
+}
 .searching .saerching__content .inputContainer svg {
   margin-right: 10px;
 }
@@ -48,10 +54,33 @@
   font-family: "Nunito Sans";
   font-weight: 600;
   font-size: 16px;
+  text-align: center;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 .searching .saerching__content select:focus {
   outline: 0px;
   border: none;
+}
+.searching .saerching__content select::-ms-expand {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  text-align: center;
+}
+@media (max-width: 1300px) {
+  .searching .saerching__content select {
+    width: 20%;
+    font-size: 14px;
+  }
+}
+@media (max-width: 700px) {
+  .searching .saerching__content select {
+    width: 25%;
+    font-size: 12px;
+  }
 }
 .searching .saerching__content select option {
   outline: 0px;
